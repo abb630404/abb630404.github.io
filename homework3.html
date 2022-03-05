@@ -11,6 +11,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>homework3</title>
   <style>
+    body{
+    font-family: 'Noto Sans TC', sans-serif;
+    }
     .container{
 
     }
@@ -30,25 +33,95 @@
       justify-content: space-between;
     }
     .justify-content-center{
-      justify-content: ;
+      justify-content: center;
+    }
+    .align-items-center{
+      align-items: center;
+    }
+    .hide{
+      display: none;
+    }
+    .text-decoration-none{
+      text-decoration: none;
+    }
+    .flex-grow-1{
+      flex-grow: 1;
+    }
+    .flex-shrink-0{
+      flex-shrink: 0;
+    }
+    .position-relative{
+      position: relative;
+    }
+    .w-100{
+      width: 100%;
+    }
+    .header-words{
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      color: #9C9C9C;
+    }
+    .banner{
+      background: url(./img/homework3/picture.jpg);
+      height: 1200px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .display-button{
+
+    }
+    .py-16{
+      padding: 16px 0px;
+    }
+    .px-85{
+      padding: 0px 85px;
+    }
+    .px-120{
+      padding: 0px 120px;
+    }
+    .pr-112{
+      padding-right: 112px;
     }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <ul class="flex">
-        <li>找景點</li>
-        <li>找美食</li>
-        <li>找活動</li>
-        <li>找旅館</li>
-        <li>找交通</li>
-        <li>我的行程</li>
+    <nav class="flex align-items-center  px-120">
+      <img class="flex-shrink-0 pr-112 py-16" src="./img/homework3/yo_taiwn.png" alt="">
+      <ul class="flex justify-content-between flex-grow-1 ">
+        <li><a href="javascript:;" class="text-decoration-none header-words">找景點</a></li>
+        <li><a href="javascript:;" class="text-decoration-none header-words">找美食</a></li>
+        <li><a href="javascript:;" class="text-decoration-none header-words">找活動</a></li>
+        <li><a href="javascript:;" class="text-decoration-none header-words">找旅館</a></li>
+        <li><a href="javascript:;" class="text-decoration-none header-words">找交通</a></li>
+        <li><a href="javascript:;" class="text-decoration-none header-words">我的行程</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    
+    <section class="banner">
+      <div>
+        <h2></h2>
+        <div>
+          <div>
+            <input type="text">
+            <div>
+              <i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3 class="flex justify-content-center">熱門活動</h3>
+      <div>
+        <button class="display-button">節慶活動</button>
+        <button class="display-button">人文體驗</button>
+        <button class="display-button">造訪生態</button>
+        <button class="display-button">運動賽事</button>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
