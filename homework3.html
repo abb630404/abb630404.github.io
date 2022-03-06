@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,13 +15,28 @@
     font-family: 'Noto Sans TC', sans-serif;
     }
     .container{
-
+      max-width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
     .row{
-
+      display: flex;
+      flex-wrap: wrap;
     }
-    .clo{
-
+    .column{
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+    }
+    .card{
+      padding: 15px 15px;
+    }
+    .card img{
+      max-width: 100%;
+    }
+    .w-25{
+      width: 25%;
     }
     .flex{
       display: flex;
@@ -69,7 +84,26 @@
       background-position: center;
     }
     .display-button{
-
+      margin-left: 12.5px;
+      margin-right: 12.5px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      background: #FFFFFF;
+      border: 2px solid #434343;
+      border-radius: 30px;
+      padding: 6px 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .display-button:hover{
+      background: #FFEC3D;
+      color: #434343;
+    }
+    h3{
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 71px;
     }
     .py-16{
       padding: 16px 0px;
@@ -82,6 +116,28 @@
     }
     .pr-112{
       padding-right: 112px;
+    }
+    .py-72-40{
+      padding-top: 72px;
+      padding-bottom: 40px;
+    }
+    .pb-73{
+      padding-bottom: 73px;
+    }
+    @media (min-width: 576px) {
+      .container{
+        max-width: 576px;
+      }
+    }
+    @media (min-width: 768px) {
+      .container{
+        max-width: 768px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container{
+        max-width: 1200px;
+      }
     }
   </style>
 </head>
@@ -114,12 +170,38 @@
       </div>
     </section>
     <section>
-      <h3 class="flex justify-content-center">熱門活動</h3>
-      <div>
+      <h3 class="flex justify-content-center py-72-40">熱門活動</h3>
+      <div class="flex justify-content-center pb-73">
         <button class="display-button">節慶活動</button>
         <button class="display-button">人文體驗</button>
         <button class="display-button">造訪生態</button>
         <button class="display-button">運動賽事</button>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row ">
+          <div class="column w-25 ">
+            <div class="card">
+              <img src="./img/homework3/card1.jpg" alt="">
+            </div>
+          </div>
+          <div class="column w-25">
+            <div class="card">
+              <img src="./img/homework3/card2jpg.jpg" alt="">
+            </div>
+          </div>
+          <div class="column w-25">
+            <div class="card">
+              <img src="./img/homework3/card3.jpg" alt="">
+            </div>
+          </div>
+          <div class="column w-25">
+            <div class="card">
+              <img src="./img/homework3/picture.jpg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
