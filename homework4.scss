@@ -1,0 +1,23 @@
+$color-green:#4CC2B1;
+$color-grey:#C4C4C4;
+$color-white:#FFFFFF;
+
+header{
+  nav{
+    display: flex;
+    
+    ul{
+      display: flex;
+
+      li{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+      }
+    }
+    img{
+      height: 100%;
+    }
+  }
+}
