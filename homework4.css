@@ -1,13 +1,52 @@
+header {
+  max-width: 100%;
+}
+
+header .head {
+  background-color: #4CC2B1;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 51px 11px 41px;
+  margin: 0px -4px;
 }
 
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0px 250px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -19,5 +58,23 @@ header nav ul li {
 
 header nav img {
   height: 100%;
+  padding: 0px 4px;
+}
+
+header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+button div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  padding: 11px 54px;
 }
 /*# sourceMappingURL=homework4.css.map */
